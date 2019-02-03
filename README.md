@@ -1,0 +1,2 @@
+# jordalNettavis
+Jordal skoles nettavis
