@@ -1,0 +1,75 @@
+body {
+    font-family: "Arial", Times, serif;
+    background-color: "black";
+    /*padding: 20px;*/
+
+}
+.top {
+    background-image: url("jordal-var.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100%;
+    /*position: fixed;*/
+    
+}
+.top > p{
+    background-color: rgb(255, 255, 255,.1);
+    margin: auto;
+    padding: 5px;
+    border: 5px;
+    background-position: center;
+    text-align: center;
+    border-radius: 20%;
+    font-size: 50px;
+    color: red;
+    text-shadow: 4px;
+    width: 50%;
+    align-self: center;        
+}
+
+nav {
+    display: grid;
+    /*    grid-template-columns: auto auto auto auto;*/
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    padding: 10px;
+    border: 10px;
+    border-style: solid;
+    border-color: green;
+    background-color: grey;
+    color: darkblue;
+    font-size: 18px;   
+}
+
+nav > div {
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
+   background-color: rgba(10,10,10,0.2); 
+}
+  
+/*Dette er en måte å sette stilen på alle div elementer som er inni 
+  (som har foreldre som er) grid-container elementer. Da bruke > skrivemåten*/
+.bedreGrid {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(44, 40, 40);
+    /*border: 4px;*/
+    padding: 10px;
+    border: 10px;
+    grid-gap: 10px;
+}
+
+.bedreGrid > div {
+background-color: rgb(174, 226, 199);
+font-size: 30px;
+}
+
+article {
+  background-color: rgb(174, 226, 199);
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: repeat (2,1fr);
+  grid-gap: 4px;
+}
